@@ -1,5 +1,5 @@
-# MountainClimber
-Mountain climbing game made with RayLib and emscripten
+# WSL2 Raylib WASM
+Example C++ game made with RayLib and emscripten on WSL2
 
 ## WSL2 Setup
 - Click the windows icon in the toolbar and type `Turn Windows features on or off`
