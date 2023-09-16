@@ -1,5 +1,5 @@
 # MountainClimber
-Mountain climbing game made with RayLib and emscripten for WASM
+Mountain climbing game made with RayLib and emscripten
 
 ## WSL2 Setup
 - Click the windows icon in the toolbar and type `Turn Windows features on or off`
