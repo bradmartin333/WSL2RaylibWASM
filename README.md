@@ -15,7 +15,7 @@ Mountain climbing game made with RayLib and emscripten for WASM
     - `./emsdk activate latest`
 - Install raylib from source
     - Install deps
-        - `sudo apt install libasound2-dev libx11-dev libxrandr-dev libxi-dev libgl1-mesa-dev libglu1-mesa-dev libxcursor-dev libxinerama-dev`
+        - `sudo apt install vlc libasound2-dev libx11-dev libxrandr-dev libxi-dev libgl1-mesa-dev libglu1-mesa-dev libxcursor-dev libxinerama-dev`
     - `cd ~`
     - `git clone https://github.com/raysan5/raylib.git raylib`
     - `cd raylib`
