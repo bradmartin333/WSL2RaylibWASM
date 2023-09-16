@@ -17,7 +17,7 @@ int main() {
 
     cout << "Hello World" << endl;
 
-    InitWindow(screenWidth, screenHeight, "My first RAYLIB program!");
+    InitWindow(screenWidth, screenHeight, "Mountain Climber");
     SetTargetFPS(60);
 
     InitAudioDevice();

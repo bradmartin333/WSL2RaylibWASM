@@ -39,4 +39,5 @@ Mountain climbing game made with RayLib and emscripten for WASM
 - Build `main.cpp` for wasm
     - `cd ~/MountainClimber`
     - `./wasm_build.sh`
+        - Take a look at file to understand what is happening
     - Open `build/game.html` in a live server
