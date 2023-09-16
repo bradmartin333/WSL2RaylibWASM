@@ -20,7 +20,14 @@ int main() {
     InitWindow(screenWidth, screenHeight, "My first RAYLIB program!");
     SetTargetFPS(60);
 
+    InitAudioDevice();
+
+    Music music = LoadMusicStream("res/sounds/western.mp3");
+    PlayMusicStream(music);
+
     while (WindowShouldClose() == false) {
+        UpdateMusicStream(music);
+
         BeginDrawing();
         ClearBackground(Dark_Green);
         ball_x += ball_speed_x;
@@ -40,6 +47,8 @@ int main() {
         EndDrawing();
     }
 
+    UnloadMusicStream(music);
+    CloseAudioDevice();
     CloseWindow();
     return 0;
 }
