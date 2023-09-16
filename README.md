@@ -31,6 +31,5 @@ Mountain climbing game made with RayLib and emscripten for WASM
     -  `g++ main.cpp -lraylib -o test`
 - Build `main.cpp` for wasm
     - `cd ~/MountainClimber`
-    - `source ../emsdk/emsdk_env.sh && emcc main.cpp -o ./build/game.html -Wall -std=c++14 -D_DEFAULT_SOURCE -Wmissing-braces -Wunused-result -Os -I. -I ../raylib/src/ -I ../raylib/src/external/ -L. -L ../raylib/src/ -s USE_GLFW=3 -s ASYNCIFY -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 --shell-file ./build/shell.html ../raylib/src/libraylib.a  -DPLATFORM_WEB -s EXPORTED_FUNCTIONS=[\"_free\",\"_malloc\",\"_main\"] -s EXPORTED_RUNTIME_METHODS=ccall --preload-file res/@res/`
-        - The first command could be automated elsewhere, but this keeps it repeatable in a WSL environment
+    - `./wasm_build.sh`
     - Open `build/game.html` in a live server
