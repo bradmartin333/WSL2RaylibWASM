@@ -2,7 +2,14 @@
 Mountain climbing game made with RayLib and emscripten for WASM
 
 ## WSL2 Setup
-- Exit all windows and open Command Prompt as admin
+- Click the windows icon in the toolbar and type `Turn Windows features on or off`
+    - Turn on `Virtual Machine Platform` and `Windows Subsystem for Linux`
+    - Confirm and reboot as prompted
+    - Download and install the [x64 machine patch](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), if needed
+    - [Open Microsoft Store, search for and install Ubuntu](https://www.microsoft.com/store/productid/9PDXGNCFSCZV?ocid=pdpshare)
+    - Open `Ubuntu` from the windows app launcher when complete
+    - Wait for install and enter desired username as password when prompted
+- Close all windows and open Command Prompt as admin
     - `wsl --update` to enable X11 server
 - Python3 comes with WSL2, so we don't have to install that
 - Install CMake and build tools
