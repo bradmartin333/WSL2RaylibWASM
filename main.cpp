@@ -15,9 +15,7 @@ int main() {
     int ball_speed_y = 5;
     int ball_radius = 15;
 
-    cout << "Hello World" << endl;
-
-    InitWindow(screenWidth, screenHeight, "Mountain Climber");
+    InitWindow(screenWidth, screenHeight, "WSL2RaylibWASM");
     SetTargetFPS(60);
 
     InitAudioDevice();

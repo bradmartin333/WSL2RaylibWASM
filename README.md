@@ -40,6 +40,7 @@ Example C++ game made with RayLib and emscripten on WSL2
     - `cd WSL2RaylibWASM`
 - Build `main.cpp` executable named `test`
     -  `g++ main.cpp -lraylib -o test`
+    - `./test` to run
 - Build `main.cpp` for wasm
     - `cd ~/WSL2RaylibWASM`
     - `./wasm_build.sh`
