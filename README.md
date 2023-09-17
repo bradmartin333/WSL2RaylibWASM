@@ -20,7 +20,7 @@ Example C++ game made with RayLib and emscripten on WSL2
     - `cd emsdk/`
     - `./emsdk install latest`
     - `./emsdk activate latest`
-- Install raylib from source
+- Install raylib from source for web
     - Install deps
         - `sudo apt install vlc libasound2-dev libx11-dev libxrandr-dev libxi-dev libgl1-mesa-dev libglu1-mesa-dev libxcursor-dev libxinerama-dev`
     - `cd ~`
@@ -34,8 +34,9 @@ Example C++ game made with RayLib and emscripten on WSL2
     - `export DISPLAY=:0`
     - Edit `/home/$USER/raylib/src/Makefile`
         - Update `EMSDK_PATH` to be `/home/$(USER)/emsdk`
-    - `source ~/emsdk/emsdk_env.sh`
+    - `source ~/emsdk/emsdk_env.sh` to activate emsdk environment variables
     - `cd ~/raylib/src`
+    - `make PLATFORM=PLATFORM_WEB`
 - Clone this repo
     - `cd ~`
     - `git clone https://github.com/bradmartin333/WSL2RaylibWASM.git`
