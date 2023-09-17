@@ -47,4 +47,4 @@ Example C++ game made with RayLib and emscripten on WSL2
         - Take a look at file to understand what is happening
     - Open `build/game.html` in a live server
         - `python -m http.server 8000`
-        - Go to [http://localhost:8080](http://localhost:8080) in browser
+        - Go to [http://localhost:8080](http://localhost:8080) in browser and navigate to the file
