@@ -27,17 +27,22 @@ Example C++ game made with RayLib and emscripten on WSL2
     - `git clone https://github.com/raysan5/raylib.git raylib`
     - `cd raylib`
     - `mkdir build && cd build`
-    - `cmake -DBUILD_SHARED_LIBS=ON ..`
+    - `cmake -DBUILD_SHARED_LIBS=ON ..` (Might have to hit enter if it seems to have stalled)
     - `make`
     - `sudo make install`
     - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib`
     - `export DISPLAY=:0`
     - Edit `/home/$USER/raylib/src/Makefile`
         - Update `EMSDK_PATH` to be `/home/$(USER)/emsdk`
+- Clone this repo
+    - `cd ~`
+    - `git clone https://github.com/bradmartin333/WSL2RaylibWASM.git`
+    - `cd WSL2RaylibWASM`
 - Build `main.cpp` executable named `test`
     -  `g++ main.cpp -lraylib -o test`
 - Build `main.cpp` for wasm
-    - `cd ~/MountainClimber`
+    - `cd ~/WSL2RaylibWASM`
     - `./wasm_build.sh`
         - Take a look at file to understand what is happening
     - Open `build/game.html` in a live server
+        - `python -m http.server 8000`
